@@ -97,7 +97,7 @@ graph LR
     style BATTERY fill:#1a1a2e,stroke:#4a9eff,color:#fff
 ```
 
-The MPPT controller optimizes solar charging efficiency (+30% vs a standard PWM controller), while the buck regulator ensures a stable 5V/3A output — protecting the Raspberry Pi and sensors from battery voltage fluctuations. Total system consumption averages ~7W, giving roughly 24h of autonomy without sunlight.
+The MPPT controller optimizes solar charging efficiency (+30% vs a standard PWM controller), while the buck regulator ensures a stable 5V/3A output protecting the Raspberry Pi and sensors from battery voltage fluctuations. Total system consumption averages ~7W, giving roughly 24h of autonomy without sunlight.
 ## Repo structure
 
 ```
