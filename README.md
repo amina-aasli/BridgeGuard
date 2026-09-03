@@ -63,7 +63,7 @@ graph LR
 2. **AI analysis**  a semantic segmentation model (YOLOv8n-seg) identifies and quantifies water surfaces in the image, combined with OpenCV analysis (color-based segmentation + current speed via optical flow).
 3. **Decision**  a threshold-based engine aggregates these signals into a risk score (low / moderate / critical).
 4. **Active safety**  if the risk becomes critical, a second model (YOLOv8n) verifies the bridge is clear of vehicles before automatically triggering a physical barrier closure.
-5. **Alert**  authorized engineers receive an SMS/email in under 5 seconds; a public dashboard informs residents of the bridge's status in real time.
+5. **Alert**  authorized engineers receive an SMS/email in under 4 seconds; a public dashboard informs residents of the bridge's status in real time.
 
 ## Results
 
