@@ -71,7 +71,7 @@ graph LR
 |---|---|
 | Vehicle detection (YOLOv8n) | mAP50 = 0.926 |
 | Water level precision (HC-SR04) | ± 0.3 cm |
-| Alert response time | < 5 seconds |
+| Alert response time | < 4 seconds |
 | Segmentation inference speed | 12.5 ms/image |
 
 ## Tech stack
