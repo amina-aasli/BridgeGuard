@@ -68,17 +68,12 @@ graph TD
 
 The beacon never computes a route on-device — it only knows two fixed points per axis: its own position, and a verified nearby point that is outside the risk zone. Guidance itself is entirely delegated to the driver's own Maps app.
 
-| Axis | Beacon (origin) | Safe point (destination) | Distance |
-|---|---|---|---|
-| A — North | 31.695430, -7.987536 | 31.696762, -7.987861 | ≈ 150 m |
-| B — South-West (Oued Issil) | 31.688102, -7.989490 | 31.687348, -7.992351 | ≈ 285 m |
-| C — South-East (entry 1) | 31.688106, -7.986236 | 31.687348, -7.992351 | ≈ 585 m |
-| C — South-East (entry 2) | 31.687806, -7.986669 | 31.687348, -7.992351 | ≈ 541 m |
-
-![Axis A route](gis/route-axe-a.png)
-![Axis B route](gis/route-axe-b.png)
-![Axis C entry 1 route](gis/route-axe-c-v1.png)
-![Axis C entry 2 route](gis/route-axe-c-v2.png)
+| Axe | Balise (origine) | Point sûr (destination) | Distance | Itinerary |
+|---|---|---|---|---|
+| A — Nord | 31.695430, -7.987536 | 31.696762, -7.987861 | ≈ 150 m | <img src="gis/route-axe-a.png" width="220"/> |
+| B — Sud-Ouest (Oued Issil) | 31.688102, -7.989490 | 31.687348, -7.992351 | ≈ 285 m | <img src="gis/route-axe-b.png" width="220"/> |
+| C — Sud-Est (entrée 1) | 31.688106, -7.986236 | 31.687348, -7.992351 | ≈ 585 m | <img src="gis/route-axe-c-v1.png" width="220"/> |
+| C — Sud-Est (entrée 2) | 31.687806, -7.986669 | 31.687348, -7.992351 | ≈ 541 m | <img src="gis/route-axe-c-v2.png" width="220"/> |
 
 Each destination was empirically validated against Google Maps' actual routing engine — not just estimated visually on a satellite image — since real road topology (one-way segments, roundabout connectivity) can silently reroute a seemingly short path into a much longer one.
 
