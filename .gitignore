@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+beacon/.pio/
+beacon/include/secrets.h
