@@ -98,6 +98,12 @@ graph LR
 ```
 
 The MPPT controller optimizes solar charging efficiency (+30% vs a standard PWM controller), while the buck regulator ensures a stable 5V/3A output protecting the Raspberry Pi and sensors from battery voltage fluctuations. Total system consumption averages ~7W, giving roughly 24h of autonomy without sunlight.
+## Ongoing extensions
+
+BridgeGuard is expanding into a connected mobility ecosystem:
+- **[BridgeGuard-Beacon](./beacon)** — anonymous driver notification via Wi-Fi captive portal, pre-calculated deviation routing, and an Evil Twin threat model with independent physical failsafe, validated end-to-end
+- **BridgeGuard-OBU** — opt-in in-vehicle badge for connected fleets (upcoming)
+
 ## Repo structure
 
 ```
@@ -105,5 +111,6 @@ BridgeGuard/
 ├── hardware/       → CATIA design + electronic schematic
 ├── software/       → decision engine, OpenCV processing
 ├── ml-models/      → YOLOv8 training notebooks
-└── web-app/        → frontend, backend, database
+├── web-app/        → frontend, backend, database
+└── beacon/         → BridgeGuard-Beacon (Phase 2, see beacon/README.md)
 ```
